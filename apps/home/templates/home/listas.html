@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <a href="{% url 'home:menu' %}">menu</a>
+    <a href="{% url 'home:blog' %}">blog</a>
+    <a href="{% url 'home:listas' %}">listas</a>
+
+    {% mi_lista  %}
+
+    {% endblock content %}
+</body>
+</html>
