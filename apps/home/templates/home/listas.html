@@ -11,7 +11,16 @@
     <a href="{% url 'home:blog' %}">blog</a>
     <a href="{% url 'home:listas' %}">listas</a>
 
-    {% mi_lista  %}
+    
+    {% for lista in mi_listas %}
+    <div>
+     
+      <p style="color: brown;">  {{ lista }} </p> </div>  
+      
+      {% endfor %}
+  
+    </div>
+    {{ mi_listas }}
 
     {% endblock content %}
 </body>

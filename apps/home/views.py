@@ -19,4 +19,4 @@ def listas(request):
     otra_lista = ["hola", "como", "estas", "?"]
     mi_lista_1 =  ["cadena", 1000,  12.34, 0, "otra cadena"]
 
-    return render(request, "home/listas.html", mi_lista)
+    return render(request, "home/listas.html", {"mi_listas": mi_lista})
